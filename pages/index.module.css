@@ -1,0 +1,29 @@
+.HomeSectionWhy,
+.HomeSectionContact,
+.HomeSectionEvents {
+  @apply relative max-w-7xl w-full mb-20;
+}
+
+.HomeSectionWhy::before,
+.HomeSectionContact::before {
+  width: 70%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #edeff4;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .HomeSectionWhy::before,
+  .HomeSectionContact::before {
+    width: 100%;
+  }
+
+  .HomeSectionContact {
+    @apply mb-0 !important;
+  }
+}
