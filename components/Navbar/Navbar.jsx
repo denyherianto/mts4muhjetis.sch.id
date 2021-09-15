@@ -1,18 +1,20 @@
 import { forwardRef } from 'react'
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import logoPicture from '@/public/logo.png'
 
 const navigation = [
-  { name: 'PROFIL', href: '#', current: true },
+  { name: 'PROFIL', href: '/profil', current: true },
   { name: 'KURIKULUM', href: '#', current: false },
   { name: 'PRESTASI', href: '#', current: false },
-  { name: 'AGENDA', href: '#agenda', current: false },
-  { name: 'GALERI', href: '#', current: false },
-  { name: 'KONTAK', href: '#contact', current: false },
+  // { name: 'AGENDA', href: '#agenda', current: false },
+  { name: 'GALERI', href: '/galeri', current: false },
+  { name: 'KONTAK', href: '/#contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -20,18 +22,20 @@ function classNames(...classes) {
 }
 
 const Logo = forwardRef((props, ref) => {
-  return (
-    <Image src={logoPicture} alt="Logo" />
-  );
-});
+  return <Image src={logoPicture} alt="Logo" />
+})
 
 export function Navbar() {
+  const router = useRouter()
+  const isHome = router.pathname === '/'
+  const containerClass = clsx('absolute w-full', isHome && 'bg-transparent', !isHome && 'bg-black')
+
   return (
     <>
       <Disclosure as="nav" className="z-10 w-full">
         {({ open }) => (
           <>
-            <div className="absolute bg-transparent w-full">
+            <div className={containerClass}>
               <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-2">
                 <div className="container">
                   <div className="relative flex items-center justify-between h-16">
@@ -51,15 +55,11 @@ export function Navbar() {
                     </div>
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                       <div className="flex-shrink-0 flex items-center">
-                        <Link
-                          href="/"
-                          passHref
-                          className="cursor-pointer"
-                        >
-                          <Logo />
+                        <Link href="/" passHref>
+                          <a><Logo /></a>
                         </Link>
                       </div>
-                      <div className="hidden sm:block sm:ml-6">
+                      <div className="block hidden items-center md:flex sm:ml-6">
                         <div className="flex space-x-4">
                           {navigation.map((item) => (
                             <a

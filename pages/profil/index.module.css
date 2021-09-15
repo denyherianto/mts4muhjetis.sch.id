@@ -1,0 +1,26 @@
+.ProfileSectionAbout,
+.ProfileSectionVision {
+  @apply relative max-w-7xl w-full my-10;
+}
+
+.ProfileSectionAbout {
+  @apply mt-32;
+}
+
+.ProfileSectionAbout::before {
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #edeff4;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .ProfileSectionAbout::before {
+    width: 100%;
+  }
+}
