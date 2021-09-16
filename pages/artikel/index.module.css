@@ -1,0 +1,13 @@
+.ArticleSectionEvents {
+  @apply relative max-w-7xl w-full my-20;
+}
+
+.ArticleDetailSectionEvents {
+  @apply relative max-w-7xl w-full mb-20;
+}
+
+.ArticleDetailSectionEventsImage {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}

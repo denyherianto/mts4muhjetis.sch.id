@@ -15,6 +15,15 @@ export default function Profile() {
           <div className="container mx-auto">
             <div className="py-20 px-8">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-20">
+                <div className="col-span-7 text-right">
+                  <iframe
+                    width="100%"
+                    height="400px"
+                    src="https://www.youtube-nocookie.com/embed/tXL4ZRaQkFg?autoplay=1"
+                    title="Profil MTs Muhammadiyah 4 Jetis"
+                    frameborder="0"
+                  ></iframe>
+                </div>
                 <div className="col-span-5">
                   <h1 className="text-3xl font-black font-title mb-12">
                     Tentang Sekolah
@@ -23,24 +32,14 @@ export default function Profile() {
                     Madrasah Tsanawiyah Muhammadiyah 4 Jetis Ponorogo didirikan
                     pada tanggal 01 Juli 1964 dengan izin operasional No.:
                     L.M/3/23/C/1978, yang bernaung dibawah Majelis Pendidikan
-                    Dasar dan Menengah Daerah Muhammadiyah Ponorogo, merupakan
-                    salah satu dari sekian banyak Madrasah Tsanawiyah yang
-                    berada di Ponorogo Madrasah Tsanawiyah Muhammadiyah 4 Jetis
-                    Ponorogo, menggunakan metode melestarikan metode lama yang
-                    baik dan mengambil baru yang lebih baik. Metode ini
-                    diharapkan sesuai dengan arah kebijakan pemerintah nengenai
-                    kurikulum tahun 2013 yang telah diberlakukan.
+                    Dasar dan Menengah Daerah
+                    <br /><br />
+                    Madrasah Tsanawiyah Muhammadiyah 4 Jetis
+                    Ponorogo berupaya melestarikan metode lama yang
+                    kami anggap baik dan mengambil baru yang lebih baik. Metode ini
+                    diharapkan sesuai dengan arah kebijakan pemerintah mengenai
+                    kurikulum pembelajaran tahun 2013 yang telah diberlakukan.
                   </p>
-                </div>
-                <div className="col-span-7 text-right">
-                  {/* <Image src={sectionProfilePicture} alt="Apa kata mereka?" /> */}
-                  <iframe
-                    width="100%"
-                    height="400px"
-                    src="https://www.youtube-nocookie.com/embed/tXL4ZRaQkFg?autoplay=1"
-                    title="Profil MTs Muhammadiyah 4 Jetis"
-                    frameborder="0"
-                  ></iframe>
                 </div>
               </div>
             </div>
@@ -57,7 +56,7 @@ export default function Profile() {
                     Tujuan Pendidikan Menengah
                   </h1>
                   <p className="text-lg mb-8">
-                    Standar Kompetensi lulusan pada satuan pendidikan menengah
+                    Standar Kompetensi Lulusan pada satuan pendidikan menengah
                     umum bertujuan untuk meningkatkan kecerdasan, pengetahuan,
                     kepribadian, akhlak mulia, serta ketrampilan untuk hidup
                     mandiri dan mengikuti pendidikan lebih lanjut.
@@ -90,10 +89,10 @@ export default function Profile() {
                       </li>
                       <li>
                         Menyiapkan anak didik yang mampu menghadapi situasi
-                        global
+                        global.
                       </li>
                       <li>
-                        Terciptanyan hubungan yang harmonis dan demokratis antar
+                        Terciptanya hubungan yang harmonis dan demokratis antar
                         warga sekolah dan lingkungan sekolah.
                       </li>
                     </ol>

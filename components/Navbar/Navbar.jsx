@@ -12,7 +12,7 @@ const navigation = [
   { name: 'PROFIL', href: '/profil', current: true },
   { name: 'KURIKULUM', href: '#', current: false },
   { name: 'PRESTASI', href: '#', current: false },
-  // { name: 'AGENDA', href: '#agenda', current: false },
+  // { name: 'BERITA', href: '/artikel', current: false },
   { name: 'GALERI', href: '/galeri', current: false },
   { name: 'KONTAK', href: '/#contact', current: false },
 ]

@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
   let articles = []
   try {
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}/articles?_limit=13&_sort=created_at:DESC`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/articles?_limit=3&_sort=created_at:DESC`,
       {
         headers: {
           Accept: 'application/json',
