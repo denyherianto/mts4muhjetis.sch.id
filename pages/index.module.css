@@ -17,6 +17,12 @@
   z-index: -1;
 }
 
+.HomeSectionContactMap {
+  @apply w-full !important;
+  border: 1px solid #999;
+  pointer-events: none;
+}
+
 @media only screen and (max-width: 600px) {
   .HomeSectionWhy::before,
   .HomeSectionContact::before {

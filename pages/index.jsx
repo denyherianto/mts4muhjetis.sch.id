@@ -137,10 +137,10 @@ export default function Home({ articles }) {
               <div className="grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-20">
                 <div className="col-span-6 mb-8">
                   <iframe
+                    className={styles.HomeSectionContactMap}
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.567181274949!2d111.47993611459935!3d-7.940188994280599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e790ad690f711ff%3A0x14b99b9d68ebfa08!2sMTS%20MUHAMMADIYAH%204%20JETIS!5e0!3m2!1sen!2sid!4v1631695597239!5m2!1sen!2sid"
-                    width="600"
+                    width="100%"
                     height="450"
-                    style={{ border: '1px solid #999', pointerEvents: 'none' }}
                     loading="lazy"
                   ></iframe>
                 </div>
