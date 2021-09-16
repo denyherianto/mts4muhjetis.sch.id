@@ -1,6 +1,6 @@
 .Banner {
   @apply w-full top-0 py-10 flex items-end;
-  background-image: url('../../public/banner.jpg');
+  background-image: url('../../public/hero.jpg');
   background-size: cover;
   background-position: center 70%;
   min-height: 600px;
