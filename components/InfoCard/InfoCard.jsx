@@ -13,7 +13,7 @@ export const InfoCard = ({ data }) => {
         <a className="col-span-4">
           <div className="mb-4">
             <img
-              src={`http://localhost:1337${data.image.url}`}
+              src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${data.image.url}`}
               alt="article image"
               style={{ height: '250px', objectFit: 'cover' }}
             />

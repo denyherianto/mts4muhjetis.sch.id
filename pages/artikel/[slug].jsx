@@ -43,7 +43,7 @@ export default function ArticleDetail({ article }) {
         {article && (
           <>
             <img
-              src={`http://localhost:1337${article.image.url}`}
+              src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${article.image.url}`}
               alt="article image"
               className={styles.ArticleDetailSectionEventsImage}
             />
