@@ -152,6 +152,8 @@ export default function Home({ articles }) {
                     MTS MUHAMMADIYAH 4 JETIS PONOROGO
                   </h3>
                   <p className="text-lg mb-8">
+                    Jl S. Sukowati No. 180
+                    <br />
                     Dukuh Tegalarum, Desa Kutu Kulon
                     <br />
                     Kec. Jetis, Kab. Ponorogo
@@ -161,7 +163,9 @@ export default function Home({ articles }) {
                     Kode Pos 63473
                     <br />
                     <br />
-                    Tel: <strong>(0343) 1234-5678</strong>
+                    Tel: <strong>(0352) 311-289</strong>
+                    <br />
+                    Email: <strong><a href="mailto:mts3jetis@yahoo.co.id">mts3jetis@yahoo.co.id</a></strong>
                   </p>
                 </div>
               </div>

@@ -32,7 +32,7 @@ export default function Profile() {
                     Madrasah Tsanawiyah Muhammadiyah 4 Jetis Ponorogo didirikan
                     pada tanggal 01 Juli 1964 dengan izin operasional No.:
                     L.M/3/23/C/1978, yang bernaung dibawah Majelis Pendidikan
-                    Dasar dan Menengah Daerah
+                    Dasar dan Menengah Daerah Muhammadiyah Ponorogo.
                     <br /><br />
                     Madrasah Tsanawiyah Muhammadiyah 4 Jetis
                     Ponorogo berupaya melestarikan metode lama yang
