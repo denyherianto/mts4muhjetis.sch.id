@@ -99,7 +99,7 @@ export default function Home({ articles }) {
                     <br />
                     <br />
                     Kami bekali pula dengan agama, Al-Quran dan Al-Hadist. Kami
-                    percaya, setiap anak berhak tumbuh dan mendampat pendidikan
+                    percaya, setiap anak berhak tumbuh dan mendapatkan pendidikan
                     terbaik dari manapun asal dan latar belakangnya.
                   </p>
                 </div>
